@@ -1,0 +1,9 @@
+Object of singleton class can not be created outside the class and can be created only once inside the class
+
+Singleton class should have - 1 private constructor, a static method which will create instance only once and returns that instance whenever called, a static property to hold the instance
+
+Singlton class should be sealed so that other class can not inherit that class
+
+Singleton class can be used in logging, caching, database connection pool etc.
+
+Singleton class is useful for managing concurrent access of shared resource by multiple clients or creating expensive instance creaion which can reduce performance if created multiple times
