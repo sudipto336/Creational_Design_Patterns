@@ -6,23 +6,23 @@ using System.Threading.Tasks;
 
 namespace Singleton
 {
-    internal sealed class SingleThreadedSingleton
+    internal sealed class Singleton
     {
-        private static SingleThreadedSingleton instance;
+        private static Singleton instance;
 
         private static int counter = 0;
 
-        private SingleThreadedSingleton() {
+        private Singleton() {
             counter++;
             Console.WriteLine($"Counter value increased");
             Console.WriteLine($"Counter value - {counter}");
         }
 
-        public static SingleThreadedSingleton GetInstance()
+        public static Singleton GetInstance()
         {
             if (instance == null)
             {
-                instance = new SingleThreadedSingleton();
+                instance = new Singleton();
             }
             return instance;
         }
