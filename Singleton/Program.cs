@@ -5,9 +5,9 @@
         static void Main(string[] args)
         {
             SingleThreadedSingleton singleThreadedSingleton1 = SingleThreadedSingleton.GetInstance();
-            singleThreadedSingleton1.printMessage("message1");
+            singleThreadedSingleton1.PrintMessage("message1");
             SingleThreadedSingleton singleThreadedSingleton2 = SingleThreadedSingleton.GetInstance();
-            singleThreadedSingleton2.printMessage("message2");
+            singleThreadedSingleton2.PrintMessage("message2");
         }
     }
 }

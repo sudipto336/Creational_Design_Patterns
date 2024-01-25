@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Singleton
 {
-    internal class SingleThreadedSingleton
+    internal sealed class SingleThreadedSingleton
     {
         private static SingleThreadedSingleton instance;
 
-        private int counter = 0;
+        private static int counter = 0;
 
         private SingleThreadedSingleton() {
             counter++;
@@ -27,7 +27,7 @@ namespace Singleton
             return instance;
         }
 
-        public void printMessage(string message)
+        public void PrintMessage(string message)
         {
             Console.WriteLine(message);
         }
