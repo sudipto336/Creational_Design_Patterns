@@ -5,3 +5,5 @@ we can resolve issue using double check locking then if the instance is null the
 so it improves the performance and execution becomes fast
 
 inner check is used to ensure only one isntance is created
+
+https://dotnettutorials.net/lesson/thread-safe-singleton-design-pattern/

@@ -4,6 +4,22 @@ Singleton class should have - 1 private constructor, a static method which will 
 
 Singlton class should be sealed so that other class can not inherit that class
 
-Singleton class can be used in logging, caching, database connection pool etc.
+Singleton class can be used in logging (to ensure logging in a single file/destination which is shared across multiple parts of app),
 
-Singleton class is useful for managing concurrent access of shared resource by multiple clients or creating expensive instance creaion which can reduce performance if created multiple times
+-> implementing cache manager (to store frequently accessed data in a centralized part which can be accessed in multiple parts of app),
+
+-> database connection pool (for managing pool of db connections which can be accessed in multiple parts of app) etc.
+
+-> configuration management (store and access all app config which can be accessed in multiple parts of app)
+
+Singleton class is useful for managing concurrent access of a shared resource (db connection pool, configuration manager, logging) by multiple clients
+
+or creating expensive instance creation only once which can reduce performance if created multiple times
+
+or where lazy intialization of instance is reqd to optimize performance and resource usage
+
+or optimize resource usage by creating single instance at startup of app
+
+or making instance thrad safe so that multiple thread can access concurrently without any issue
+
+https://dotnettutorials.net/lesson/singleton-design-pattern/

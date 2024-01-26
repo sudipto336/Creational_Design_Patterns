@@ -9,3 +9,5 @@ once lock on the resource by a thread is released, then other thread is allowed 
 as the instance creation is locked only 1 thread can create thread and other thread needs to wait 
 
 so multiple instance will not be created
+
+https://dotnettutorials.net/lesson/thread-safe-singleton-design-pattern/

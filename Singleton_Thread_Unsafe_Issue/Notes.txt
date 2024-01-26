@@ -9,3 +9,5 @@ In multi threaded environment
 -> so they create multiple instance calling constructor of singleton class which will break singleton principle
 
 Parallel.Invoke() - to execute passed methods by multiuple threads
+
+https://dotnettutorials.net/lesson/thread-safe-singleton-design-pattern/

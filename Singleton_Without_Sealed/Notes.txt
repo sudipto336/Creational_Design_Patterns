@@ -1,3 +1,5 @@
 If a singleton class is not sealed then any inner class can inherit from that class and creating instances of that inner class can invoke private constructor of singleton class i.e creating multiple instances of singleton class, so singleton rule breaks
 
 so singleton class should be sealed so that any class (including inner class) can not inherit singleton class and create multiple instances
+
+https://dotnettutorials.net/lesson/singleton-class-sealed/
