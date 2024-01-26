@@ -1,0 +1,11 @@
+In multi threaded environment 
+
+-> if the singleton class is not thread safe
+
+-> then multiple threads can access method for get instance of singleton class 
+
+-> then they might see the instance is not created
+
+-> so they create multiple instance calling constructor of singleton class which will break singleton principle
+
+Parallel.Invoke() - to execute passed methods by multiuple threads
