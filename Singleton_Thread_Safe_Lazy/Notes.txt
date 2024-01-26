@@ -1,0 +1,5 @@
+thread safe singleton can be achieved using Lazy<T>
+
+it ensures only 1 obj is created even if accessed by multiple threads concurrently (multi threaded env - thread safe)
+
+it provides lazy initialization of instance i.e instance will be created when it is first accessed
