@@ -1,0 +1,7 @@
+the issue in using single check lock is even if the instance is not null, all other thread needs to wait until a thread releases the lock
+
+we can resolve issue using double check locking then if the instance is null then only other threads needs to wait to the instance to be created otherwise they can directly use the instance
+
+so it improves the performance and execution becomes fast
+
+inner check is used to ensure only one isntance is created

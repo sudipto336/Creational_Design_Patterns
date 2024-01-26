@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton_Thread_Safe_Singl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton_Thread_Unsafe_Issue", "Singleton_Thread_Unsafe_Issue\Singleton_Thread_Unsafe_Issue.csproj", "{628E86CA-B860-44DD-901A-1990258B199C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton_Thread_Safe_Double_Check_Locking", "Singleton_Thread_Safe_Double_Check_Locking\Singleton_Thread_Safe_Double_Check_Locking.csproj", "{4821815B-C5D2-4B3E-AA94-812D6386687E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{628E86CA-B860-44DD-901A-1990258B199C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{628E86CA-B860-44DD-901A-1990258B199C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{628E86CA-B860-44DD-901A-1990258B199C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4821815B-C5D2-4B3E-AA94-812D6386687E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4821815B-C5D2-4B3E-AA94-812D6386687E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4821815B-C5D2-4B3E-AA94-812D6386687E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4821815B-C5D2-4B3E-AA94-812D6386687E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
