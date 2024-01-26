@@ -1,0 +1,11 @@
+Thread safe singleton class can be created by synchronize method (for getting instance of sinleton class) using lock
+
+Using lock on a shared resource ensures that that can be accessed by a single thread at a time
+
+by that time other thread needs to wait for the resource to be free
+
+once lock on the resource by a thread is released, then other thread is allowed to use the resource
+
+as the instance creation is locked only 1 thread can create thread and other thread needs to wait 
+
+so multiple instance will not be created
