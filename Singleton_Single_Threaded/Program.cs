@@ -1,4 +1,4 @@
-﻿namespace Singleton
+﻿namespace Singleton_Thread_Unsafe
 {
     internal class Program
     {

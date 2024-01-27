@@ -6,9 +6,9 @@ it provides lazy initialization of instance i.e instance will be created when it
 
 lazy loading is the initialization of instance on demand i.e when needed - it saves memory/resource as instance is initialized when it is needed
 
-- it is useful when the oibject creation is expensive/costly/resource intensive or it takes longer time to create instance
+- it is useful when the object creation is expensive/costly/resource intensive or it takes longer time to create instance
 
-- it improves performance
+- it improves performance and reduces app start time
 
 - Lazy<T> creates single and thread safe instance by default
 

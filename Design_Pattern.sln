@@ -7,13 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton_Without_Sealed", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton_Thread_Unsafe", "Singleton_Single_Threaded\Singleton_Thread_Unsafe.csproj", "{CB39A9BD-B6C2-4D09-92B3-F2AF4D6CE24A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton_Thread_Safe_Single_Check_Locking", "Singleton_Thread_Safe_Single_Check_Locking\Singleton_Thread_Safe_Single_Check_Locking.csproj", "{F60E433D-8846-4A51-B37E-228DB42980C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton_Thread_Safe_Single_Check_Locking", "Singleton_Thread_Safe_Single_Check_Locking\Singleton_Thread_Safe_Single_Check_Locking.csproj", "{F60E433D-8846-4A51-B37E-228DB42980C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton_Thread_Unsafe_Issue", "Singleton_Thread_Unsafe_Issue\Singleton_Thread_Unsafe_Issue.csproj", "{628E86CA-B860-44DD-901A-1990258B199C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton_Thread_Unsafe_Issue", "Singleton_Thread_Unsafe_Issue\Singleton_Thread_Unsafe_Issue.csproj", "{628E86CA-B860-44DD-901A-1990258B199C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton_Thread_Safe_Double_Check_Locking", "Singleton_Thread_Safe_Double_Check_Locking\Singleton_Thread_Safe_Double_Check_Locking.csproj", "{4821815B-C5D2-4B3E-AA94-812D6386687E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton_Thread_Safe_Double_Check_Locking", "Singleton_Thread_Safe_Double_Check_Locking\Singleton_Thread_Safe_Double_Check_Locking.csproj", "{4821815B-C5D2-4B3E-AA94-812D6386687E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton_Thread_Safe_Lazy", "Singleton_Thread_Safe_Lazy\Singleton_Thread_Safe_Lazy.csproj", "{DC1F6B70-7CDA-45F1-A9CD-0C1A5B192C6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton_Thread_Safe_Lazy_Loading", "Singleton_Thread_Safe_Lazy\Singleton_Thread_Safe_Lazy_Loading.csproj", "{DC1F6B70-7CDA-45F1-A9CD-0C1A5B192C6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton_Thread_Safe_Eager_Loading", "Singleton_Thread_Safe_Eager_Loading\Singleton_Thread_Safe_Eager_Loading.csproj", "{9F239551-02D6-4475-A9F7-49C265830D2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{DC1F6B70-7CDA-45F1-A9CD-0C1A5B192C6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC1F6B70-7CDA-45F1-A9CD-0C1A5B192C6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC1F6B70-7CDA-45F1-A9CD-0C1A5B192C6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F239551-02D6-4475-A9F7-49C265830D2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F239551-02D6-4475-A9F7-49C265830D2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F239551-02D6-4475-A9F7-49C265830D2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F239551-02D6-4475-A9F7-49C265830D2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

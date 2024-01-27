@@ -1,4 +1,4 @@
-﻿namespace Singleton_Thread_Safe_Lazy
+﻿namespace Singleton_Thread_Safe_Lazy_Loading
 {
     internal class Program
     {

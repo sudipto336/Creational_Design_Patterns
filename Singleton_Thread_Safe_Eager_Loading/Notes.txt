@@ -1,0 +1,10 @@
+Eager loading is intialization of instance (at app startup) before it is actually needed to make it available (in memory) immidiately (ready to use immidiately) when it is required
+
+it consumes memory/resource even if the instance is never used
+
+it can be used if the obj creation is not expensive (lightweight and cheap) and quick and it is required to make available immidiately when required
+
+CLR takes care of null checking, thread safety, instance initialization - we dont need to write code to handle these
+
+https://dotnettutorials.net/lesson/lazy-vs-eager-loading-chsrap/
+

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Singleton
+namespace Singleton_Thread_Unsafe
 {
     internal sealed class Singleton
     {
