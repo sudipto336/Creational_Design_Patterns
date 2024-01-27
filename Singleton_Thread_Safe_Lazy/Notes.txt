@@ -4,4 +4,14 @@ it ensures only 1 obj is created even if accessed by multiple threads concurrent
 
 it provides lazy initialization of instance i.e instance will be created when it is first accessed
 
+lazy loading is the initialization of instance on demand i.e when needed - it saves memory/resource as instance is initialized when it is needed
+
+- it is useful when the oibject creation is expensive/costly/resource intensive or it takes longer time to create instance
+
+- it improves performance
+
+- Lazy<T> creates single and thread safe instance by default
+
+- without Lazy<T>, lazy loading can be achieved using single/double check locking - here we need to write code for ensuring thread safety (locking) and null check and instance initialization
+
 https://dotnettutorials.net/lesson/thread-safe-singleton-design-pattern/
