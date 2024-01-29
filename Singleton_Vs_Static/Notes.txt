@@ -1,43 +1,57 @@
-Instance of static class cant be created whereas a single instance of singleton class can be created (lazy/eager) i.e instance creation can be controlled
+Instance of static class cant be created manually 
 
-Static is C# feature whereas Singleton is a design pattern
+A single instance of singleton class can be initialized (lazily/eagerly) and singleton class contains a global point of access of that instance (when and how instance will be created, can be controlled)
+
+Static is C# feature
+
+Singleton is a design pattern
 
 Static class cant be inherited (sealed) or cant inherit any other class/interface
 
 Singleton class cant be inherited but can inherit any other class/interface (more flexible)
 
-For sigleton thread safety needs to be handled manually through writing code
+For sigleton thread safety can be handled manually through writing code
 
 Static class and its members is thread safe
 
-Static class (including its members) and Singleton class instance dont get collected by garbage collected as they dont get stored in stack rather they get stored in high frequency heap - memory can be released when program ends
+Singleton class contains both instance and static methods
 
-Singleton class can be used for managign db connections, mamaging app configurations, caching, logging, data sharing, managing global state (maintain state and access globally) etc. where a global point of access reqd
-
-Static class can be used to implement library, utility fn, extension method, helper etc. - where maintaining state and obj initialization are not reqd
-
-All members of static class is static
-
-Singleton class contains instance methods whereas static class contains only static methods
-
-Memory gets allocated to singleton class instance
+Static class contains only static methods
 
 Memory cant be allocated to static class instance but can be allocated to static class members
 
-Singleton class has instance specific state (variable and methods) whereas members of static class does not have
+Memory gets allocated to singleton class instance
 
-singleton class can have only one instance and provides a global point of access of that instance
+Singleton class has instance specific state (variable and methods) 
 
-copy of static class gets created memory, but instance cant be created manually
-
-in singleton constructor/method, complex instance initialization logic can be implemented
+Static class does not have instance specific state (variable and methods)
 
 singleton class isntance can be cloned (deep/shallow copy) which is not possible for static class
 
 dependency injection can be used with Singleton but cant be used with static class
 
-singleton class contains a private constructor so that instance of that class cant be created from outside the clas, a single instance can be created only inside the class and can be accessed reused whenever reqd
+Singleton class can be initialized eagerly when CLR loads the class or can be initilized lazily
 
-A singleton class can be initialized eagerly when CLR loads the class or can be initilized lazily
+Static class gets initialized when the class loads
 
-Singleton class gets initialized when the class loads
+In singleton constructor/method, complex instance initialization logic can be implemented - not possible for static class as it cant be instantiated
+
+Singleton class instance can be passed as method arg - not possible with static class
+
+Singleton class instance can be disposed - static class can not be disposed
+
+
+Static class (including its members) and Singleton class instance dont get collected by garbage collected as they dont get stored in stack rather they get stored in high frequency heap - memory can be released when program ends
+
+All members of static class are static
+
+
+Singleton class can be used for managign db connections, mamaging app configurations, caching, logging, data sharing, managing a global state (maintain state and access globally) etc. where a global point of access reqd - used to ensure a class has only 1 instance throughout app lifetime and a global point of access provided
+
+Static class can be used to implement library, utility fn, extension method, helper etc. - used where maintaining state and obj initialization are not reqd - used to group related functionalities inside without creating instance
+
+
+Static and Singleton both have 1 instance in memory through out app lifecycle, both holds global state of app which is common for all clients, both can be implemented as thread safe
+
+
+
