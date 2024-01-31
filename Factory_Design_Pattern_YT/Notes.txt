@@ -1,0 +1,4 @@
+Factory design pattern 
+
+- factory class creates obj based on received params and conditions
+- abstract class or interface is used
