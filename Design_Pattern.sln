@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton_Thread_Safe_Lazy_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton_Thread_Safe_Eager_Loading", "Singleton_Thread_Safe_Eager_Loading\Singleton_Thread_Safe_Eager_Loading.csproj", "{9F239551-02D6-4475-A9F7-49C265830D2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton_Vs_Static", "Singleton_Vs_Static\Singleton_Vs_Static.csproj", "{9EBB5769-30DF-4BF0-8F49-8E2731019906}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton_Vs_Static", "Singleton_Vs_Static\Singleton_Vs_Static.csproj", "{9EBB5769-30DF-4BF0-8F49-8E2731019906}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory_Design_Pattern_YT", "Factory_Design_Pattern_YT\Factory_Design_Pattern_YT.csproj", "{D33086DF-EC7A-4663-A7E9-B3938109FAC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{9EBB5769-30DF-4BF0-8F49-8E2731019906}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EBB5769-30DF-4BF0-8F49-8E2731019906}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EBB5769-30DF-4BF0-8F49-8E2731019906}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D33086DF-EC7A-4663-A7E9-B3938109FAC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D33086DF-EC7A-4663-A7E9-B3938109FAC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D33086DF-EC7A-4663-A7E9-B3938109FAC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D33086DF-EC7A-4663-A7E9-B3938109FAC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
