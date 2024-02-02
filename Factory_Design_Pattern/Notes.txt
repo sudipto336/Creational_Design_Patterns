@@ -1,0 +1,5 @@
+In factory design pattern, consumer class does not create obj directly, rather a separate factory class creates obj based on input params
+
+so the obj creation logic is not exposed to consumer class
+
+consumer class only uses the created objs

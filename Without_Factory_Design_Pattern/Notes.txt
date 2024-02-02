@@ -1,0 +1,5 @@
+Without factory design pattern the consumer/client class and the product classes are tightly coupled
+
+For getting obj of new product class, changes in consumer class is reqd
+
+Using factory design pattern, this isssues can be resolved

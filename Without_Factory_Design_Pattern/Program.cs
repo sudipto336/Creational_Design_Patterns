@@ -6,14 +6,14 @@
         {
 
             Console.WriteLine("Enter card name: ");
-            string cardType = Console.ReadLine();
+            string cardName = Console.ReadLine();
 
             CreditCard card;
 
-            if(cardType.Equals("MoneyBack"))
+            if(cardName.Equals("MoneyBack"))
             {
                 card = new MoneyBack();
-            } else if (cardType.Equals("Platinum"))
+            } else if (cardName.Equals("Platinum"))
             {
                 card = new Platinum();
             } else
