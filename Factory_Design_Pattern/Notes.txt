@@ -26,3 +26,7 @@ Configuration management - to create different config obj based on conditions (l
 Payment gateway - to create appropriate payment gateway instance based on selected gateway to process payment through gateway
 Expensive obj creation - to manage and reuse instance efficiently which is expensive to create (thread, db connection)
 External API call - to create client instance based on appropriate external party API
+
+for getting obj of new class if a new if-else condition is needed to add (in factory method), then it violates open/closed principle
+
+tight coupling between factory class and product class can be removed ysing factory method design pattern
