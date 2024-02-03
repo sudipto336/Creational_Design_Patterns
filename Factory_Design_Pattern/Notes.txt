@@ -1,5 +1,28 @@
 In factory design pattern, consumer class does not create obj directly, rather a separate factory class creates obj based on input params
 
-so the obj creation logic is not exposed to consumer class
+Factory design pattern hides the obj creation process from client - so the obj creation logic is not exposed to consumer class
 
-consumer class only uses the created objs
+It can be used when the object is created based on conditions as it hides those conditions from client
+
+It can be used when decoupling/loose coupling between obj creation and use of obj is reqd - consumer class only uses the created objs it does not need to know how obj is created
+
+It can be used when obj creation logic is complex as the complexity will be hidden from client
+
+It can be used when new classes should be inherited from anstarct class or interface without modifying client code this makes app flexible and scalable
+
+It can be used when obj creation is expensive i.e obj should be managed and reused efficiently (like db connection)
+
+Factory class centralizes and controls obj creation better so that different design pattern can be implemented (singleton etc.)
+
+Factory design pattern iomplements single responsibility (only creates obj) and open/closed principle (new class can be added without changing client code)
+
+It should not be used for obj creation with simple logic (in constr) or to improve performance
+
+Real time application of factory design pattern -
+
+Logging - to create Logger (file/db/cloud) class instance based on conditions (like different env)
+DB access - to interact with db, to create db connection and command instance based on conditions (like different db)
+Configuration management - to create different config obj based on conditions (like different env)
+Payment gateway - to create appropriate payment gateway instance based on selected gateway to process payment through gateway
+Expensive obj creation - to manage and reuse instance efficiently which is expensive to create (thread, db connection)
+External API call - to create client instance based on appropriate external party API
