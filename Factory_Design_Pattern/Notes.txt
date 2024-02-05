@@ -6,11 +6,11 @@ It can be used when the object is created based on conditions as it hides those 
 
 It can be used when decoupling/loose coupling between obj creation and use of obj is reqd - consumer class only uses the created objs it does not need to know how obj is created
 
-It can be used when obj creation logic is complex as the complexity will be hidden from client
+It can be used when obj creation logic is complex as the instcance creation is hidden from client so the complexity will be hidden from client
 
 It can be used when new classes should be inherited from anstarct class or interface without modifying client code this makes app flexible and scalable
 
-It can be used when obj creation is expensive i.e obj should be managed and reused efficiently (like db connection)
+It can be used when obj creation is expensive i.e obj should be managed and reused efficiently (like db connection, thread pool)
 
 Factory class centralizes and controls obj creation better so that different design pattern can be implemented (singleton etc.)
 

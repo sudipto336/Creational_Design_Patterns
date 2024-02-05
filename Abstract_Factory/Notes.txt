@@ -1,0 +1,40 @@
+Factory of factories - a factory creates multiple factories
+
+Sub classes of an abstract factory class, provides instances of multiple families of related product
+
+components - abstract factory, concrete factory, abstract product, concrete product, client
+
+this pattern can be used to create multiple families of related product instances
+
+each concrete factory class creates instances of products of same family -  makes app consistent
+
+in this pattern, product instance creation and product instance usage in client
+
+in this pattern, new product can be added to family of the product without modifying client code - makes app flexible and scalable
+
+this can be used for supporting multiple configurations for each env
+
+this pattern hides obj creation process from client - useful for complex obj creation
+
+abstract factory vs factory method - 
+
+abstract factory pattern provides an interface for creating families of related product instances through its subclasses - so no need to specify concrete product
+
+factory method pattern provides an interface to create product instances through its subclasses - subclasses decide instance of which class needs to be created
+
+in abstract factory, a single factory class creates multiple related product instances
+
+in factory method pattern , a single factory class creates a single product instance
+
+abstract factory - more complex and more flexible - as multiple related instances needs to be handled by a factory
+
+factory method - less complex and less flexible - as single instance needs to be handled by a factory
+
+abstract factory - used when multiple related instances needs to be created at 1 place and if no need to inform the client about how instances are created
+
+factory method - used when a class cant decide which obj needs to be created rather it allows sub class to decide which obj needs to be created
+
+in abstract factory, a factory class contains multiple factory methods to create different types of objs
+
+in factory method, a factory class (sub class) contains single factory method to create a single type of obj
+

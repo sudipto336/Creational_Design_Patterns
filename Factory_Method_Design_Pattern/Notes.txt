@@ -2,5 +2,18 @@ in factory design pattern, the factory class and the product and factory classes
  
 factory method design pattern is used to decouple the product and the factory classes - makes app flexible
 
-in factory method design pattern, factory class does not create product instance directly rather subclasses of it creates the instance
+in factory method design pattern, factory class does not create product instance directly rather subclasses of it creates the instance - factory class is interface/anstract class
 
+this pattern provides an interface to create instance of product but gives permission to subclass of the interface to decide which product instance needs to be created
+
+components of this pattern - Abstract product, concrete product, abstract factory, concrete factory
+
+it decouples the obj creation from obj usage in client - helps in loose coupling and makes app flexible and scalable
+
+new products can be added without modifying client code - makes app flexible and scalable
+
+for creating product isntances with complex logic, this pattern helps in maintenance by centralizing the logic in factory class 
+
+the interface allows sunclasses to provide different implementation of method to create product instance
+
+for testing, using this pattern actual product instance can be substitued/replaced with mock obj with different implementations of the product
