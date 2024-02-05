@@ -6,15 +6,25 @@ components - abstract factory, concrete factory, abstract product, concrete prod
 
 this pattern can be used to create multiple families of related product instances
 
-each concrete factory class creates instances of products of same family -  makes app consistent
+each concrete factory class creates instances of products of same family, each product of a family can work with others -  makes app consistent
+
+obj creation is isolated from client - separation of concern, clean architecture, easier to maintain
 
 in this pattern, product instance creation and product instance usage in client
 
-in this pattern, new product can be added to family of the product without modifying client code - makes app flexible and scalable
+in this pattern, as obj creation is decoupled from client, new product can be added to family of the product or existing product can be changed without modifying client code - makes app flexible and scalable
+
+new families of related products can be added by adding/extending new/existing factory
+
+client can switch between product families at runtime (like based on env)
 
 this can be used for supporting multiple configurations for each env
 
 this pattern hides obj creation process from client - useful for complex obj creation
+
+to add a new family of related products - new factory needs to be added, so it increases complexity and hard to manage multiple factory classes i.e product families (disadvantage)
+
+to add a new product in all families - abstract factory and its sub classes needs change (violates open/closed - disadvantage)
 
 abstract factory vs factory method - 
 
@@ -37,4 +47,6 @@ factory method - used when a class cant decide which obj needs to be created rat
 in abstract factory, a factory class contains multiple factory methods to create different types of objs
 
 in factory method, a factory class (sub class) contains single factory method to create a single type of obj
+
+
 
