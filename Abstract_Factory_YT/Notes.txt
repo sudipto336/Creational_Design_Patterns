@@ -1,0 +1,3 @@
+In abstract factory design pattern, factory class is abstract class/interface instead of concrete class (in factory design pattern)
+
+No need to add if-else for instance creation - only need to pass appropriate factory instance to create appropriate product instance
