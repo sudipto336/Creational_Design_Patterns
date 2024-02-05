@@ -1,0 +1,6 @@
+in factory design pattern, the factory class and the product and factory classes are tightly coupled
+ 
+factory method design pattern is used to decouple the product and the factory classes - makes app flexible
+
+in factory method design pattern, factory class does not create product instance directly rather subclasses of it creates the instance
+
