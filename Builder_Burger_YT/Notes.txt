@@ -1,0 +1,5 @@
+For creating complex obj step by step - builder pattern is used
+
+Client does not create obj rather it invokes multiple methods of builder to set value of properties of obj and get the obj from builder - otherwise multiple constructors need to be added to set desired group of properties which makes app complex
+
+Builder class creates product instance instead of client
