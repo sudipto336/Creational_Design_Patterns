@@ -14,6 +14,7 @@ useful for,
 	to reuse the obj creation logic as it is present at 1 place
 	to create obj with differnet configurations (properties)
 	obj creation process can be changed and controlled at runtime - flexible as no need to create multiple constrs
+	to provide fluent interface (guides client through creation process step by step) for obj creation which make code readable and easy to understand
 
 advantage - 
 
@@ -27,6 +28,7 @@ create immutable instance (cant be modified after creation) - thread safe
 more control over construction process
 building obj step by step
 adding new param to obj thrugh constr is easy - no need to change constr signature, so no change reqd in client code
+some builder implementations uses fluent interface and method chaining which makes code redable and easy to understand
 
 disdvantage - 
 
