@@ -28,7 +28,7 @@ to add a new product in all families - abstract factory and its sub classes need
 
 abstract factory vs factory method - 
 
-abstract factory pattern provides an interface for creating families of related product instances through its subclasses - so no need to specify concrete product
+abstract factory pattern provides an abstract factory (interface) for creating instance for families of related products through its subclasses without specifying concrete product in client code
 
 factory method pattern provides an interface to create product instances through its subclasses - subclasses decide instance of which class needs to be created
 
