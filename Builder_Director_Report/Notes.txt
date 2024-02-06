@@ -1,0 +1,38 @@
+in this pattern, 
+	complex obj construction process is separated from representation 
+	obj construction process is generic so that same process can be used for creating different representaion of same instance
+
+useful for,
+	creating complex objs using many simple objs step by step 
+	creating obj with required and optional properties  
+	obj construction process is complex 
+	obj construction process involves multiple steps
+	the instance has multiple representations 
+	obj construction needs to be separated from representation
+	to create immutable instance (cant be modified after creation) - during creation properties get set
+	to improve readability and maintenability of code as it is clearer and more redable than creating multiple constrs (telescoping constr anti pattern) for setting multiple property values
+	to reuse the obj creation logic as it is present at 1 place
+	to create obj with differnet configurations (properties)
+	obj creation process can be changed and controlled at runtime - flexible as no need to create multiple constrs
+
+advantage - 
+
+construction of complex obj
+separates construction process from representation (modularity)
+same construction process to create different representaions
+creating instance with multiple optional properties
+hides complex creation logic in builder - client code is cleaner
+creating multiple instances (telescoping constr anti pattern) can be avoided - improves code readability and maintenability
+create immutable instance (cant be modified after creation) - thread safe
+more control over construction process
+building obj step by step
+adding new param to obj thrugh constr is easy - no need to change constr signature, so no change reqd in client code
+
+disdvantage - 
+
+increase complexity as director and builder get added - for simple obj, it should be avoided
+step by step mulitple complex objs creation reduces efficiency, performance
+changing in obj structure, requires changes in correspondign builder - less maintenable
+as immutable obj gets created, no changes can be made after creation
+
+
