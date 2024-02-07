@@ -1,0 +1,1 @@
+Creational design patterns are used to help to create objs

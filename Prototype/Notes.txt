@@ -1,0 +1,50 @@
+In this pattern, we create a prototype obj first, then create objs by cloning that prototype using MemberwiseClone()
+
+If changes are made to cloned obj, no changes occur in prototype obj
+
+Creating objs by copying an existing obj (prototype)
+
+Cloning - copies value of fields of an obj to new obj 
+
+MemberwiseClone() peforms swallow copy and copies only non static fields
+
+Swallow Copy - if field is value type, it copies the field bit by bit - if field is reference type, it copies only reference, not the obj
+Deep copy - it copies value of both value type (bit by bit) and reference type (not reference, copies obj referenced by field) - useful if obj contains refernce type fields to avoid shared reference of obj in cloned obj
+
+Useful for,
+
+Creating heavy objs, objs with expensive (resources and time) cost of instantiation/creation, complex objs
+Creating objs similar to existing obj
+Creating obj where cloning is more efficient than constructor
+For loading templates or where obj construction can reduce performance
+Avoiding complexity of creating subclass, creating objs similar to existing obj
+Creating obj copying prototype at runtime (dynamic)
+Preserve initial state of an obj to access later
+if many similar objs need to be created, creating obj by copying existing obj is more efficient than creating from scratch
+Reduce db calls for heavy operation by cloning pre loaded obj
+for obj with complex structure, deep copy is reqd, so this pattern can be used
+
+Advantage - 
+
+can be used when cost of obj creation is expensive or complex than cloning existing obj
+if obj creation involves multiple steps or use much resource, this design pattern is more efficient than creating obj from scratch
+complexity of creation of obj is hidden in prototype, not visible to client
+client can create new objs by changing values of protype
+obj can be cloned at runtime without depending on the actual class - obj can be added/removed at runtime
+objs similar to existing prototype can be created and field values can be updated later - helps in consistency of objs with prototype
+hides product class from client
+To revert to previous state of obj (redo/undo)
+reduces creation of subclass
+
+Disadvantage - 
+
+deep copy is reqd if obj contains other objs - it is complex and error prone
+prototype needs to be initialized before using
+can reduce performance if copying includes complex logic
+if new fields added then clone method needs to be changed - reduces maintenability
+
+if 1 obj is copied to another using '=' - then both obj shares same obj reference (memory address) as '=' copies only reference not the obj (except value field) - so changing in 1 obj will affect other
+
+= copies reference not actual obj for reference type (call by ref)
+
+obj cloning - call by value - changing 1 obj will not affect other - using MemberwiseClone() - creates copy of obj with different mem location
