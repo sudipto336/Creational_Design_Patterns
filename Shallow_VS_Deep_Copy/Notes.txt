@@ -34,6 +34,7 @@ it can prevent unintentional data leak or alteration of sensitive data - origina
 for sending obj through network, deep copy can be used to ensure original obj remains unaltered
 for simulation or testing, where same process needs to be run on unchanged data multiple times, deep copy can be used to ensure original data remains unaltered
 deep copy can manage and preserve objs which have circular reference (A refers to B and B refers to A) without infinite loops
+to create temportary obj by copying existing obj where changing cloned will not affect original - deep copy can be used
 
 Deep vs Shallow copy - 
 
