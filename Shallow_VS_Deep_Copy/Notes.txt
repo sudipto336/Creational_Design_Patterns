@@ -1,0 +1,68 @@
+Shallow copy 
+
+- create new obj from existing obj by copying exact value of value type fields and reference/memory location of reference type fields (referred obj does not get copied) 
+- reference type fields of original and copied obj points to same memory location
+- value type fields get copied and stored in different memory location for copied obj
+- only references of reference type fields (class obj/array) get copied i.e not the actual obj gets created, so ref type fields of original and cloned instance get stored in same memory location for copied obj
+
+use - 
+
+as it only copies only reference of obj, not entire obj, it is faster than deep copy - so it can be used where improved performance reqd and shared reference is accepted
+as it share reference i.e dont copy entire obj, if obj is large or contains large obj, it can consume memory less than deep copy 
+if multiple objs need to have shared state through particular ref type field, then it can be used - so changing that ref type field in one obj will change in all objs which contains that field
+for creating duplicate instance temporarily for doing quick operation if shared state is not concern and not changed
+can be used in prototype pattern, if completely independent copy is not reqd
+if inner obj of main obj needs to be immutable, then shallow copy can be used as it cant be changed after creation
+Clone() on array performs shallow copy - useful if array elements are of value type or immutable ref type
+
+Deep copy
+
+- create new obj from existing obj by copying all value/ref type fields and store in different memory space
+- value type field gets copied bit by bit
+- copy of reference type field gets created and stored in different memory location
+- changes in any field of cloned obj does not make change in original obj and vice versa
+- need to manually copy each field of obj (value/ref type)
+
+use - 
+
+if cloned and original obj need to be independent i.e changing 1 will not affect other
+to preserve state in cloned and original obj independently - useful for managin history of obj state for redo/undo (word)
+can be used in prototype pattern if independent clone is reqd without shared reference
+in multi threaded env, it can prevent the side effects caused by multiple threads for changing same reference (heppens in shallow copy)
+in serialization (JSON to XML) deep copy is created as if an obj is serialized and the deserialized then the deserialized obj is deep copy of original obj
+it can prevent unintentional data leak or alteration of sensitive data - original data remains unaltered - helps in data security and integrity
+for sending obj through network, deep copy can be used to ensure original obj remains unaltered
+for simulation or testing, where same process needs to be run on unchanged data multiple times, deep copy can be used to ensure original data remains unaltered
+deep copy can manage and preserve objs which have circular reference (A refers to B and B refers to A) without infinite loops
+
+Deep vs Shallow copy - 
+
+both creates new obj by copying existing obj
+
+shallow copy copies all value type fields of existing obj but copies only references of ref type fields i.e does not copy actual ref type fields - so ref type fields in both cloned and original obj poinsts to same memory location
+
+deep copy copies all value type as well as ref type fields (copy of actual obj) of existing obj - value type fields gets copied bit by bit - creates new copy of reffered obj for any ref type fields i.e copy of actual obj gets created - ref type fields in cloned and original obj point to different memory location
+
+for shallow copy, creates new obj from exisiting obj by copying value type fields bit by bit and copying only reference of reference type fields (not actual obj) - ref type fields in cloned and original obj stored in or points to same memory location
+for deep copy, creates new obj from exisiting obj by recursively copying value and ref type fields bit by bit and creating copy of actual obj i.e reference type fields - ref type fields in cloned and original obj stored in or points to different memory location - original and cloned obj is independent and separate, so changing 1 will not affect other
+
+
+for shallow copy, ref type fields of cloned obj shares same reference with original obj  i.e stored in same memory locations
+for deep copy, copy of each ref type field gets created individually so ref type fields in original and cloned obj gets stored in different memory locations
+
+for shallow copy, modification in any ref type field (inner obj) of cloned obj will also change the same in original obj as both shares same reference
+for deep copy, any modification in cloned obj will not change original obj as independent of each other
+
+shallow copy can be done use MemberwiseClone()
+manually create copy of each inner obj recursively or use serialization-deserilization (work around)
+
+shallow copy is faster as it copies only reference
+deep copy is slower if obj is large as each copy of each entire inner obj needs to be cretaed
+
+shallow copy can be used to create copy of obj with shared reference of inner objs
+deep copy can be used to create independent copy of obj - for undo/redo functionaloty
+
+problems - 
+
+shallow copy can result in side effects as any modification in cloned obj will also modify original obj
+deep copy is complex to implement - when objs have circular ref

@@ -22,7 +22,7 @@ Creating obj copying prototype at runtime (dynamic)
 Preserve initial state of an obj to access later
 if many similar objs need to be created, creating obj by copying existing obj is more efficient than creating from scratch
 Reduce db calls for heavy operation by cloning pre loaded obj
-for obj with complex structure, deep copy is reqd, so this pattern can be used
+for copying obj with complex structure or objs with circular ref or when deep copy of complex obj is reqd, so this pattern can be used
 
 Advantage - 
 
