@@ -39,7 +39,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder_Director_Meal_YT", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder_Director_Report", "Builder_Director_Report\Builder_Director_Report.csproj", "{3D813212-7367-40DD-9365-E9893C4D6894}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype", "Prototype\Prototype.csproj", "{72E60A96-8A1A-4473-84A1-A0CDFFC5CE17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prototype", "Prototype\Prototype.csproj", "{72E60A96-8A1A-4473-84A1-A0CDFFC5CE17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shallow_VS_Deep_Copy", "Shallow_VS_Deep_Copy\Shallow_VS_Deep_Copy.csproj", "{62362935-482D-42EE-88DF-CC7F31089451}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{72E60A96-8A1A-4473-84A1-A0CDFFC5CE17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72E60A96-8A1A-4473-84A1-A0CDFFC5CE17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72E60A96-8A1A-4473-84A1-A0CDFFC5CE17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62362935-482D-42EE-88DF-CC7F31089451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62362935-482D-42EE-88DF-CC7F31089451}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62362935-482D-42EE-88DF-CC7F31089451}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62362935-482D-42EE-88DF-CC7F31089451}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
