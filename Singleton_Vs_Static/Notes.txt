@@ -46,7 +46,7 @@ Static class (including its members) and Singleton class instance dont get colle
 All members of static class are static
 
 
-Singleton class can be used for managign db connections, mamaging app configurations, caching, logging, data sharing, managing a global state (maintain state and access globally) etc. where a global point of access reqd - used to ensure a class has only 1 instance throughout app lifetime and a global point of access provided
+Singleton class can be used for managing db connections, mamaging app configurations, caching, logging, data sharing, managing a global state (maintain state and access globally) etc. where a global point of access reqd - used to ensure a class has only 1 instance throughout app lifetime and a global point of access provided
 
 Static class can be used to implement library, utility fn, extension method, helper etc. - used where maintaining state and obj initialization are not reqd - used to group related functionalities inside without creating instance
 
